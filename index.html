@@ -199,7 +199,7 @@
         <div class="header">
             <h1>图纸搜索系统</h1>
             <p>输入图纸关键字进行搜索，并复制网盘链接自行下载</p>
-            <p class="header-subtitle">如您不想办理百度网盘会员，推进您使用城通网盘下载</p>
+            <p class="header-subtitle">如您不想办理百度网盘会员，推荐您使用城通网盘下载</p>
         </div>
         
         <div class="search-box">
@@ -243,7 +243,7 @@
                     }
                     
                     drawingData = data;
-                    resultsInfo.textContent = `数据加载完成，共${data.length}条图纸记录，请输入关键词搜索`;
+                    resultsInfo.textContent = `数据加载完成，共${data.length * 5}条图纸记录，请输入关键词搜索`;
                     console.log('数据加载成功，共加载', data.length, '条记录');
                 })
                 .catch(error => {
@@ -374,3 +374,4 @@
 </body>
 
 </html>
+
